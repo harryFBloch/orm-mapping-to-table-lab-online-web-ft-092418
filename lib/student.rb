@@ -26,4 +26,15 @@ class Student
       SQL
       DB[:conn].execute(sql)
   end
+  
+  def save
+    sql = <<-SQL
+      INSERT INTO students(
+      id INTEGER PRIMARY KEY,
+      name TEXT,
+      grade INTEGER
+      )
+      SQL
+      DB[:conn].execute(sql)
+  end
 end
