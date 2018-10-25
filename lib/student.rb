@@ -36,7 +36,7 @@ class Student
       @id = DB[:conn].execute("SELECT id FROM students DESC LIMIT 1").flatten[0]
   end
   
-  def self.create(name, grade)
+  def self.create(atrribute_hash)
     student = Student.new(name, grade)
     student.save
   end
