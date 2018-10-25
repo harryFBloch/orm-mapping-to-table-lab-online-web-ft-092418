@@ -37,10 +37,10 @@ class Student
   end
   
   def self.create(atrribute_hash)
-    atrribute_hash.each {|key, value|
+    # atrribute_hash.each {|key, value|
       
-      binding.pry
-    }
+    #   binding.pry
+    # }
     student = Student.new(atrribute_hash[:name], atrribute_hash[:grade])
   end
 end
