@@ -10,7 +10,9 @@ class Student
   end
   
   def self.drop_table
-    
+    sql = <-SQL
+      DROP TABLE students
+    SQL
   end
   
   def self.create_table
