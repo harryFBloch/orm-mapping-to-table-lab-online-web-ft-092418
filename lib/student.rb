@@ -34,7 +34,7 @@ class Student
       VALUES (?,?)
       SQL
       DB[:conn].execute(sql, self.name, self.grade)
-      self.id = DB[:conn].execute("SELECT id FROM students DESC LIMIT 1")
+      @id = DB[:conn].execute("SELECT id FROM students DESC LIMIT 1")
       binding.pry
   end
 end
