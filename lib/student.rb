@@ -43,5 +43,6 @@ class Student
     # }
     student = Student.new(atrribute_hash[:name], atrribute_hash[:grade])
     student.save
+    student
   end
 end
