@@ -37,6 +37,10 @@ class Student
   end
   
   def self.create(atrribute_hash)
+    atrribute_hash.each {|key, value|
+      
+      binding.pry
+    }
     student = Student.new(name, grade)
     student.save
   end
